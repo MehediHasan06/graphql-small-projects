@@ -1,0 +1,21 @@
+type User {
+  id: ID!
+  name: String!
+  email: String!
+  age: Int
+}
+
+type Query {
+  users: [User!]! 
+  user(id: ID!): User!
+}
+
+type Mutation {
+  createUser(id: ID!, name: String!, email: String!, age: Int): User!
+  updateUser(id: ID!, name: String, email: String, age: Int): User!
+  deleteUser(id: ID!): User!
+}
+
+# queries — the way you’re going to get data from the server.
+# mutations — the way you’re going to modify data on the server and get updated data back (create, update, delete).
+# subscriptions — the way you’re going to maintain a real-time connection with the server

@@ -1,0 +1,11 @@
+{
+  "name": "simple-graphql-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Mehedi Hasan",
+  "license": "MIT",
+  "scripts": {
+    "dev": "graphpack",
+    "build": "graphpack build"
+  }
+}
